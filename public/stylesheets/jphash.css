@@ -1,0 +1,29 @@
+#social_plugins{margin-top:0px;overflow:hidden}
+
+#social_plugins div{float:left}
+
+#plugin_hatebu{margin-right:10px}
+
+#plugin_facebook{margin-right:10px}
+
+.logo img{
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #AAAAAA;
+}
+
+p.subtitle {
+	font-size: 20px;
+	color: #666666;
+}
+
+input[type="button"]{
+	width: 600px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+p.copyright {
+	font-size: 16px;
+	color: #666666;
+}

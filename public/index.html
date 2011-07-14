@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>#日本語ハッシュタグったー - つぶやきを自動で日本語ハッシュタグにするサービス！ #日本語ハッシュタグ</title>
+		<meta name="description" content="つぶやきを自動で #日本語ハッシュタグ にしてくれるサービス。「#日本語ハッシュ>タグったー」です。日本語ハッシュタグでつぶやいちゃおう！">
+		<meta name="keyword" content="日本語ハッシュタグ,日本語ハッシュ,ハッシュタグ,つぶやき">
+		<meta property="og:title" content="「#日本語ハッシュタグったー」 - つぶやきを自動で日本語ハッシュタグにするサービス！ #日本語ハッシュタグ">
+    <meta property="og:url" content="http://ninjatokyo.com/jphash/">
+    <meta property="og:image" content="http://ninjatokyo.com/jphash/images/logo.png">
+    <meta property="og:site_name" content="#日本語ハッシュタグったー">
+    <meta property="og:description" content="つぶやきを自動で #日本語ハッシュタグ にしてくれるサービス。「#日本語ハッシュタグったー」です。日本語ハッシュタグでつぶやいちゃおう！">
+    <meta property="fb:admins" content="100000136604142,1392181102">
+		<link rel="stylesheet" href="stylesheets/blueprint/screen.css" type="text/css" media="screen">
+ 		<link rel="stylesheet" href="stylesheets/blueprint/print.css" type="text/css" media="print">
+		<!--[if IE]>
+    <link rel="stylesheet" href="stylesheets/blueprint/ie.css" type="text/css" media="screen">
+    <![endif]-->
+		<link rel="stylesheet" href="stylesheets/blueprint/plugin/fancy-type.css" type="text/css" media="screen,print">
+		<link rel="stylesheet" href="stylesheets/jphash.css" type="text/css" media="screen,print">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<script type="text/javascript" src="javascripts/jphash.js"></script>
+	</head>
+<body>
+	<div class="container">
+		<hr class="space">
+		<div class="logo span-4 colborder">
+			<img src="images/logo.png">
+		</div>
+		<div id="header" class="span-19 last">
+				<h1><b>#日本語ハッシュタグったー</b></h1>
+				<p class="subtitle">つぶやきを自動で日本語ハッシュタグにしてくれるサービス<br>「#日本語ハッシュタグったー」です。<br>日本語ハッシュタグでつぶやいちゃおう！</p>
+		</div>
+		<hr>
+		<div id="navigation" class="span-24 last">
+			<!-- social plug-in buttons -->
+			<div id="social_plugins">
+  			<div id="plugin_hatebu">
+    			<a href="http://b.hatena.ne.jp/entry/http://ninjatokyo.com/jphash/" class="hatena-bookmark-button" data-hatena-bookmark-title="#日本語ハッシュタグったー" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+  			</div>
+  			<div id="plugin_twitter">
+    			<a href="http://twitter.com/share" class="twitter-share-button" data-text="#日本語ハッシュタグったー - つぶやきを自動で日本語ハッシュタグにするサービス！ #日本語ハッシュタグ" data-count="horizontal" data-lang="ja">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  			</div>
+				<div id="plugin_faceboook">
+					<iframe src="http://www.facebook.com/plugins/like.php?app_id=212517232103578&amp;href=http%3A%2F%2Fninjatokyo.com%2Fjphash%2F&amp;send=false&amp;layout=button_count&amp;width=160&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21px" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:21px;" allowTransparency="true"></iframe>
+				</div>
+			</div>
+			<!-- end: social plugin -->
+		</div>
+		<div id="content" class="span-17">
+			<form id='form'>
+  			<div id='textarea'>
+   	 			<textarea id='textarea_tweet' cols=18 rows=3 placeholder="ここにツイートしたい文章を書くよ！" style="width:90%;font-size:30px;"></textarea>
+  			</div>
+  			<div id='button'>
+    			<input type='button' id='do' value="日本語ハッシュタグ化して投稿確認する">
+  			</div>
+			</form>
+		</div>
+		<div class="span-7 last">
+<!-- tweetwindow -->
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'ninjatokyo jphash',
+  interval: 6000,
+  title: 'http://ninjatokyo.com/jphash',
+  subject: '#日本語ハッシュタグったー',
+  width: 'auto',
+  height: 260,
+  theme: {
+    shell: {
+      background: '#ffffff',
+      color: '#858585'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
+<!-- end:tweetwindow -->
+		</div>
+		<div id="footer" class="span-24 last">
+		<hr class="space">
+		<hr class="space">
+		<hr>
+		<p class="copyright">
+			developed by <a href="http://twitter.com/elrana" taget="_blank">@elrana</a> and <a href="http://twitter.com/hamakn" target="_blank">@hamakn</a>. <br>
+			copyright 2011 Tomotaka Osumi and Katsunori Kawaguchi all rights reserved. 
+		</p>
+		<hr class="space">
+		</div>
+	</div>
+<!-- google analytics -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15339556-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- end:google analytics -->
+</body>
+</html>
