@@ -1,8 +1,20 @@
 $(function(){
-  $("#do").click(function(){
+  $("#do").click(function(i){
+		// CHECK iget
+		///////////////////////////////
+		var iget = "off";
+
+		if($("input[name=iget]").attr('checked')){
+			iget = "on" 
+		}
+
+		// API CONNECTION
+		////////////////////////////////
     $.getJSON(
       "api/hashnized.json?callback=?",
-      {        "text": $("#textarea_tweet").val(),
+      {        
+				"text": $("#textarea_tweet").val(),
+				"iget": iget
       },
       function(json){
         //console.log(json);

@@ -26,7 +26,7 @@
 	<div class="container">
 		<hr class="space">
 		<div class="logo span-4 colborder">
-			<img src="images/logo.png">
+			<img src="images/logo.png" alt="#日本語ハッシュタグったー">
 		</div>
 		<div id="header" class="span-19 last">
 				<h1><b>#日本語ハッシュタグったー</b></h1>
@@ -47,11 +47,16 @@
 				</div>
 			</div>
 			<!-- end: social plugin -->
+			<hr class="space">
+			<hr>
 		</div>
 		<div id="content" class="span-17">
 			<form id='form'>
+				<div id="iget">
+					<input type="checkbox" name="iget" value="on"><span class="iget"> 「#最強井ゲット」機能を利用する。</span><br>　　例：「井上陽水」を「#上陽水」のようにハッシュ化！「井」をいれてつぶやこう！「井」特化型機能。
+				</div>
   			<div id='textarea'>
-   	 			<textarea id='textarea_tweet' cols=18 rows=3 placeholder="ここにツイートしたい文章を書くよ！" style="width:90%;font-size:30px;"></textarea>
+   	 			<textarea id='textarea_tweet' cols="12" rows="3" placeholder="ここにツイートしたい文章を書くよ！" style="font-size:30px;width:93%"></textarea>
   			</div>
   			<div id='button'>
     			<input type='button' id='do' value="日本語ハッシュタグ化して投稿確認する">
@@ -67,7 +72,7 @@ new TWTR.Widget({
   type: 'search',
   search: 'ninjatokyo jphash',
   interval: 6000,
-  title: 'http://ninjatokyo.com/jphash',
+  title: 'http://ninjatokyo.com/jphash/',
   subject: '#日本語ハッシュタグったー',
   width: 'auto',
   height: 260,
@@ -96,14 +101,27 @@ new TWTR.Widget({
 </script>
 <!-- end:tweetwindow -->
 		</div>
-		<div id="footer" class="span-24 last">
 		<hr class="space">
 		<hr class="space">
 		<hr>
+		<div id="logs" class="span-24 last">
+			<h3><b>#日本語ハッシュタグったーサービス開発履歴</b></h3>
+			<ul>
+				<li>7/13(水) 9:00 Twitterが日本語ハッシュタグをサポート開始とアナウンスがなされる</li>
+				<li>7/13(水) 23:00 <a href="http://twitter.com/elrana" taget="_blank">@elrana</a>と<a href="http://twitter.com/hamakn" target="_blank">@hamakn</a>で「#日本語ハッシュタグったー」を開発しようと決意。夜を徹して開発開始。</li>
+				<li>7/14(木) 5:00 「#日本語ハッシュタグったー」初期バージョン開発完了、リリース。<b>Twitterアナウンスから２４時間以内にサービスリリースできた！</b></li>
+				<li>7/14(木) 19:00 <a href="http://nlab.itmedia.co.jp/nl/articles/1107/14/news097.html" target="_blank">ITMedia「ねとらぼ」記事</a>にて<b>「#日本語ハッシュタグったー」</b>が紹介される。（ねとらぼ様ありがとうございます）</li>
+				<li>7/15(金) 01:00 日本語ハッシュタグ化の精度UP実装。<b>今まで「#絶対 #領域」だったものを「#絶対領域」と１つの日本語ハッシュタグとしてとれる</b>ように改良。</li>
+				<li>7/16(土) 02:00 漢字の「井」を日本語ハッシュタグにしてしまう<b>「#最強井ゲット」機能</b>を実装。<b>「井上陽水」といれると「#上陽水」となる</b>ように改良。</li>
+				<li>7/16(土) 03:00 開発者は睡眠不足により寝る。。。さて、次の展開は！？とりあげていただけるメディア様大歓迎！</li>
+			</ul>
+		</div>
+		<div id="footer" class="span-24 last">
+		<hr>
 		<p class="copyright">
-			developed by <a href="http://twitter.com/elrana" taget="_blank">@elrana</a> and <a href="http://twitter.com/hamakn" target="_blank">@hamakn</a>. <br>
+			"#日本語ハッシュタグったー" was developed by <a href="http://twitter.com/elrana" taget="_blank">@elrana</a> and <a href="http://twitter.com/hamakn" target="_blank">@hamakn</a>. <br>
 			copyright 2011 Tomotaka Osumi and Katsunori Kawaguchi all rights reserved. 
-		</p>
+		</p>\\\\\
 		<hr class="space">
 		</div>
 	</div>

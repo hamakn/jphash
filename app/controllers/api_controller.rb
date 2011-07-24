@@ -12,9 +12,16 @@ class ApiController < ApplicationController
 					 }
 
 		text = params[:text] || "" 
-		
-		items = indexed text
-		hashnized = tagged text, items
+		hashnized = nil
+
+		if params[:iget] == "on" then
+			# igetモードの場合
+			hashnized = igotten text
+		else
+			# igetモードでない場合
+			items = indexed text
+			hashnized = tagged text, items
+		end
 
 		@res[:text] = text
 		@res[:hashnized] = hashnized
@@ -25,6 +32,35 @@ class ApiController < ApplicationController
   end
 
 private
+	# igotten
+	#################################
+	def igotten text
+		before = ""
+		res = ""
+		count = 0
+
+    text = text.gsub(/^\s/, "")
+		text = text.gsub(/\s$/, "")
+
+		arr = text.split(//u)
+		
+		arr.each do |r|
+			if r == "井" and !( before == "\s#" or before == "井" or arr[count+1] == nil )
+				res += "\s#"
+				before = "\s#"
+				count += 1
+			else
+				res += r
+				before = r
+				count +=1
+			end
+		end
+
+    text = text.gsub(/^\s/, "")
+
+		res = res += " #最強井ゲット" 
+	end
+
 	# tagged
 	##################################
 	def tagged text, items

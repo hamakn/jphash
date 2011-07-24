@@ -11,6 +11,11 @@
 	border: 1px solid #AAAAAA;
 }
 
+span.iget {
+	font-size: 18px;
+	color: #483d8b;
+}
+
 p.subtitle {
 	font-size: 20px;
 	color: #666666;
