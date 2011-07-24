@@ -1,3 +1,5 @@
+require 'MeCab'
+
 class ApiController < ApplicationController
 	# hashized
 	#############################
